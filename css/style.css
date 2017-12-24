@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+	background-image: url(../images/tree_bg.jpg);
+	color:#ffffff;
+	font:24px Pacifico,sans-serif;
+
+}
+
+.tree-spruce,
+.tree-bot,
+.top {
+	margin: 0 auto;
+}
+
+.tree-spruce {
+	width: 0;
+	height: 0;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 120px solid #106403;
+}
+
+.tree-spruce:nth-child(2) {
+	margin-top: -60px;
+	border-left-width: 100px;
+	border-right-width: 100px;
+	border-bottom-width: 160px;
+}
+
+.tree-spruce:nth-child(3) {
+	margin-top: -100px;
+	border-left-width: 120px;
+	border-right-width: 120px;
+	border-bottom-width: 200px;
+}
+
+
+.tree-bot {
+	width: 40px;
+	height: 60px;
+	background-color: #913c00;
+}
+
+.top {
+	width: 2em;
+	height: 2em;
+	background: #d5c912;	
+	border-radius: 50%;
+}
+
+.snowContainer {
+	width: 100%;
+	height: 100%;
+	position: absolute; top: 0; left: 0; z-index: 0;
+}
+#snow {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/snow1.png"), url("../images/snow2.png"), url("../images/snow3.png");
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;
+}
+@keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-moz-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-webkit-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
+@-ms-keyframes snow {0% {background-position: 0px 0px, 0px 0px, 0px 0px;} 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}}
